@@ -1,0 +1,71 @@
+/* Potential color pallet?
+
+Background: #F5F1ED
+Accent 1: #cab8a3
+Accent 2: #DAD2BC 
+Font 1: #122932 
+Font 2: #2C514C
+
+We can totally change this. I grabbed this color pallet from coolers.com. Happy to switch them out!
+
+-- AP --
+*/
+
+
+/* --- AP ---  Some early style ideas? */
+body {
+    background-color: #F5F1ED; 
+    max-width: 85%; 
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav li {
+    display: inline; 
+}
+
+.areyana_about_me{
+    background-color: #DAD2BC; 
+    border-color: black; 
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.areyana_about_me h2{
+    text-align: center;
+}
+
+.areyana_about_me img {
+    display: block;
+    margin: 0 auto;
+}
+
+.resource_headings {
+    background-color: #cab8a3; 
+    border-color: black; 
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.intersectionality_paragraphs{
+    background-color: #DAD2BC; 
+    border-color: black; 
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 30px 50px 30px 50px;
+}
+
+
+
+
+
+
