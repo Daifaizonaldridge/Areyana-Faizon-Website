@@ -1,4 +1,4 @@
 # **(Group Website)**
 LIS 500 website for our group project.
 (Our portfolios)
-(update 2: for website to update i edit document and commit)
+(update 3: going to add tech hero today and a photo/history, see if my profile uploaded correctly, then change the design)
