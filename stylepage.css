@@ -55,12 +55,12 @@ nav li a:hover{
 
 
 
-/*start of home page
+/*start of home page*/
 
 .image_of_dog {
     margin: auto;
     width: 500px; 
-} */
+} 
 
 .welcome {
     display: flex;
