@@ -4,7 +4,7 @@ Background: #F5F1ED
 Accent 1: #cab8a3
 Accent 2: #DAD2BC 
 Font 1: #122932 
-Font 2: #2C514C
+Font 2: #063218
 
 We can totally change this. I grabbed this color pallet from coolers.com. Happy to switch them out!
 
@@ -15,16 +15,40 @@ We can totally change this. I grabbed this color pallet from coolers.com. Happy 
 /* --- AP ---  Some early style ideas? */
 body {
     background-color: #F5F1ED; 
-    max-width: 85%; 
     margin: 0 auto;
+    max-width: 95%;
 }
 
 header {
     text-align: center;
 }
 
-nav li {
-    display: inline; 
+
+nav {
+    background-color: #cab8a3;
+    height: 65px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: inline-flex;
+    gap: 0 50px;
+    font-size: 18px;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav li a{
+    text-decoration: none; 
+    color: #063218;
+    font-weight: bold; 
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 .areyana_about_me{
@@ -68,6 +92,52 @@ nav li {
 .faizon_about_me h2{
     text-align: center;
     color: #4169E1;
+}
+
+.about_us_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_us_container .about_me {
+    margin: 20px;
+    max-width: 450px;
+}
+
+.inequality_graphics {
+    display:flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.inequality_graphics img {
+    max-width: 400px;
+}
+
+.figure_caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    max-width: 400px;
+}
+
+.intersectionality_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.intersectionality_container p {
+    max-width: 500px;
+}
+
+.long_paragraphs {
+    max-width: 950px; 
+    margin: 0 auto;
+    margin-top: 10px; 
+    margin-bottom: 20px;
 }
 
 .faizon_about_me p{
