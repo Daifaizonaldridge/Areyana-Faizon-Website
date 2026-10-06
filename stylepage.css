@@ -263,6 +263,13 @@ nav li a:hover{
     margin: 0 auto;
 }
 
+.faizon_about_me img{
+	display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 50%;
 .figure_caption_center {
     margin: 0 auto; 
 }
