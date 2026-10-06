@@ -55,12 +55,12 @@ nav li a:hover{
 
 
 
-/*start of home page
+/*start of home page*/
 
 .image_of_dog {
     margin: auto;
     width: 500px; 
-} */
+} 
 
 .welcome {
     display: flex;
@@ -270,6 +270,8 @@ nav li a:hover{
     object-fit: cover;
     margin: 20px auto;
     border-radius: 50%;
+}
+
 .figure_caption_center {
     margin: 0 auto; 
 }
@@ -302,11 +304,6 @@ button:hover {
 }
 
 
-
-
-
-
-/* Resources Page End */ 
 
 
 
