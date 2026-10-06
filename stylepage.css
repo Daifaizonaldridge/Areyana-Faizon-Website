@@ -157,8 +157,25 @@ nav li a:hover{
 .faizon_about_me img{
 	display: block;
     margin: auto;
-    width: 10%;
+    width: auto;
+    height: auto;
+
 }
 /* end of Faizons about me section DA */
 
+/*Intersectionality bias test section*/
 
+.intersectionality_bias_test img{ 
+    display: block;
+    margin: auto;
+}
+/*End of intersectionality bias test section*/
+
+/*start of home page*/
+.index.html .image_of_dog img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+/*end of home page*/
