@@ -88,8 +88,10 @@ nav li a:hover{
     padding: 30px 50px 30px 50px;
 }
 
+/* Faizons about me section DA */
 .faizon_about_me h2{
-    
+    text-align: center;
+    color: #4169E1;
 }
 
 .about_us_container {
@@ -138,7 +140,23 @@ nav li a:hover{
     margin-bottom: 20px;
 }
 
+.faizon_about_me p{
+    border: 5px inset black;
+}
 
+.faizon_about_me{
+    background-color: #DAD2BC; 
+    padding: 10px;
+    border-style: groove;
+    border-width: thick;
+    border-color: black;
+}
 
+.faizon_about_me img{
+	display: block;
+    margin: auto;
+    width: 10%;
+}
+/* end of Faizons about me section DA */
 
 
