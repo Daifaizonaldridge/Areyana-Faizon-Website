@@ -156,10 +156,11 @@ nav li a:hover{
 
 .faizon_about_me img{
 	display: block;
-    margin: auto;
-    width: auto;
-    height: auto;
-
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 50%;
 }
 /* end of Faizons about me section DA */
 
@@ -167,7 +168,10 @@ nav li a:hover{
 
 .intersectionality_bias_test img{ 
     display: block;
-    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 /*End of intersectionality bias test section*/
 
