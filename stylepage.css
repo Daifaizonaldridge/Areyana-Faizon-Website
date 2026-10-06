@@ -13,6 +13,8 @@ We can totally change this. I grabbed this color pallet from coolers.com. Happy 
 
 
 /* --- AP ---  Some early style ideas? */
+
+/* Global Styles */ 
 body {
     background-color: #F5F1ED; 
     margin: 0 auto;
@@ -48,8 +50,51 @@ nav li a{
 
 nav li a:hover{
     text-decoration: underline;
-    color: black;
+    color: #4169E1;
 }
+
+
+
+/*start of home page
+
+.image_of_dog {
+    margin: auto;
+    width: 500px; 
+} */
+
+.welcome {
+    display: flex;
+    gap: 500px; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+.welcome p {
+    width: 200px;
+    background-color: #F5F1ED; 
+    height: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+}
+
+
+
+
+/*end of home page*/
+
+
+
+
+/* Start of About Us Page */ 
+
+
+/* Areyana Section -- AP */ 
 
 .areyana_about_me{
     background-color: #DAD2BC; 
@@ -62,12 +107,92 @@ nav li a:hover{
 
 .areyana_about_me h2{
     text-align: center;
+    color: #4169E1;
 }
 
 .areyana_about_me img {
     display: block;
     margin: 0 auto;
 }
+
+.about_us_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_us_container .about_me {
+    margin: 20px;
+    max-width: 450px;
+}
+
+
+
+
+/* Faizons about me section DA */
+.faizon_about_me h2{
+    text-align: center;
+    color: #4169E1;
+}
+
+.faizon_about_me p{
+    border: 5px inset black;
+}
+
+.faizon_about_me{
+    background-color: #DAD2BC; 
+    padding: 10px;
+    border-style: groove;
+    border-width: thick;
+    border-color: black;
+}
+
+.faizon_about_me img{
+	display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+
+}
+/* end of Faizons about me section DA */
+
+
+/* End of About US Page */ 
+
+
+
+/* Tech Hero Page Start */ 
+
+.hero_image {
+    width: 450px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.hero_heading {
+    text-align: center;
+}
+
+.hero_paragraph {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tech_heroes {
+    background-color: #DAD2BC; 
+    border-color: black; 
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+
+
+
+/* Resources Page Start */ 
 
 .resource_headings {
     background-color: #cab8a3; 
@@ -79,26 +204,13 @@ nav li a:hover{
     text-align: center;
 }
 
-.intersectionality_paragraphs{
+.resource_paragraphs{
     background-color: #DAD2BC; 
     border-color: black; 
     border: 5px;
     border-style: solid;
     border-radius: 10px;
     padding: 30px 50px 30px 50px;
-}
-
-
-
-.about_us_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.about_us_container .about_me {
-    margin: 20px;
-    max-width: 450px;
 }
 
 .inequality_graphics {
@@ -136,33 +248,6 @@ nav li a:hover{
     margin-bottom: 20px;
 }
 
-/* Faizons about me section DA */
-.faizon_about_me h2{
-    text-align: center;
-    color: #4169E1;
-}
-
-.faizon_about_me p{
-    border: 5px inset black;
-}
-
-.faizon_about_me{
-    background-color: #DAD2BC; 
-    padding: 10px;
-    border-style: groove;
-    border-width: thick;
-    border-color: black;
-}
-
-.faizon_about_me img{
-	display: block;
-    margin: auto;
-    width: auto;
-    height: auto;
-
-}
-/* end of Faizons about me section DA */
-
 /*Intersectionality bias test section*/
 
 .intersectionality_bias_test img{ 
@@ -171,11 +256,52 @@ nav li a:hover{
 }
 /*End of intersectionality bias test section*/
 
-/*start of home page*/
-.index.html .image_of_dog img{
+
+.resources_images {
+    max-width: 700px;
     display: block;
-    margin: auto;
-    width: 50%;
-    height: auto;
+    margin: 0 auto;
 }
-/*end of home page*/
+
+.figure_caption_center {
+    margin: 0 auto; 
+}
+
+.racial_attitudes_graph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.implicit_bias_videos {
+    display: flex; 
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    display: block;
+    margin: 0 auto; 
+    height: 45px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black; 
+}
+
+
+
+
+
+
+/* Resources Page End */ 
+
+
+
+
+
