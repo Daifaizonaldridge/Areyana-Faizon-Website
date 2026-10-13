@@ -209,6 +209,7 @@ nav li a:hover{
     margin-top: 15px;
     text-align: center;
     line-height: 1.3em;
+    border-style: solid;
 }
 
 .tech_heroes {
