@@ -40,7 +40,7 @@ header {
 
 nav {
     background-color: #cab8a3;
-    height: 65px;
+    min-height: 65px;
     border-radius: 10px;
     margin-bottom: 20px;
     margin: 10px 20px 10px 20px; 
@@ -199,6 +199,7 @@ nav li a:hover{
     max-width: 100%;
     display: block;
     margin: 0 auto; 
+    box-shadow: 2px 2px 2px 2px;
 }
 
 .hero_heading {
@@ -213,6 +214,7 @@ nav li a:hover{
     line-height: 1.3em;
     border-style: solid;
     font-size: 20px;
+    padding: 15px;
 }
 
 .tech_heroes {
@@ -278,15 +280,27 @@ nav li a:hover{
     max-width: 400px;
 }
 
+.racial_attitudes_caption{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
 .intersectionality_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .intersectionality_container p {
     max-width: 500px;
+    text-align:justify; 
+    margin-right: 15px;
 }
 
 .long_paragraphs {
@@ -296,7 +310,15 @@ nav li a:hover{
     margin-bottom: 20px;
 }
 
-/*Intersectionality bias test section*/
+.bias_videos {
+    text-align: center;
+}
+
+.take_test {
+    text-align: center;
+}
+
+/*Intersectionality bias test section -- FA */
 
 .intersectionality_bias_test img{ 
     display: block;
@@ -322,6 +344,9 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-wrap: break-word;
+    align-items: center;
+
 }
 
 .implicit_bias_videos {
@@ -336,8 +361,9 @@ button {
     margin: 0 auto; 
     height: 45px;
     width: 200px;
-    background-color: red;
+    background-color: #4169E1;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 button a {
