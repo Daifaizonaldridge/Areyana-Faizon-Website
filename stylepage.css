@@ -210,6 +210,7 @@ nav li a:hover{
     text-align: center;
     line-height: 1.3em;
     border-style: solid;
+    font-size: 20px;
 }
 
 .tech_heroes {
