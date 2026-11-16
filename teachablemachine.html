@@ -31,50 +31,130 @@
 
             <h2> Video Demo </h2>
 
-            <h2> Try it Yourself! </h2>
 
+            <!-- Start of Project Statement Section. 
+             
 
-
-<!-- Note: I may experiment with some interactive javascript here if I have time! AP -->
+            For the development of these interactive modals, I didn't want the text to just be very long on the page and ruin the design and aesthetics of the website,
+            so I used a combination of a YouTube tutorial, this one to be specific: https://www.youtube.com/watch?v=XH5OW46yO8I
+            And ChatGPT for granular changes to help me make the modals on this page using some javascript.
+            I specifically asked ChatGPT to help me with clicking out of the modal by clicking on the background, which helped me add the "event" listener background to the moadl, and then I otherwise relied on the pre-existing design of the site and the buttons
+            that I already created to help me design the modals so that it aligned with our site design
+            
+            -- AP -->
 
             <h1> Project Statement </h1>
 
-                <h2> Data Collection </h2>
+            <p> Click the buttons below to learn more about our project and how this relates to lessons from the course </p>
 
-                    <p> Paragraphs </p>
 
-                <h2> Classification </h2>
-
-                    <p> Paragraphs </p>
-
-                <h2> Algorithmic Bias </h2>
-
-                    <p> Paragraphs </p>
-
-                <h2> Power and Consequences </h2>
-
-                    <p> Paragraphs </p>
+            
+            
+            <div class="modal_buttons_container"> 
+                <button class="modal_button" id="open_data_collection"> Data Collection </button> 
+                <button class="modal_button" id="open_classification"> Classification </button> 
+                <button class="modal_button" id="open_algorithmic_bias"> Algorithmic Bias </button>
+                <button class="modal_button" id="open_power_consequences">Power and Consequences </button> 
+            </div>
 
 
 
-            <h1> References </h1>
+            
+            <!-- Start of Data Collection container -->
+
+                <div class="modal_container" id="data_collection_modal_container">
+                    <div class="modal">
+
+                <h2 class="modal_title"> Data Collection </h2>
+
+                    <p class="project_statement_paragraphs"> To begin, we first met to discuss our plan for this project. A part of this was considering what we both had access to, which also illuminates both our overlapping and our distinctive sociopolitical positions. We decided that clothes are something we both have access to. However, rather than just focusing on clothes specifically, focusing on how our clothing choices may map onto our differing genders would allow us to pay a bit more attention to how an algorithm understands the distinction between our clothing choices, particularly in ways that align with performances of femininity and masculinity. This allows us to consider not only how it might be mapping these distinctions onto our own clothes, but also for others who may use the system. </p>
+
+                    <p class="project_statement_paragraphs"> As Judy Wajcman (2010) has articulated, gender/gender performance, and our associations with them, are historically and socially constructed. This is important to consider as technoscience has and continues to maintain a masculine bent. While Jessi Hempel (2016) has contested the myth that men are the sole founders of Silicon Valley, these hegemonic narratives that associate men and masculinity with technology remain prevalent. We hope our project helps to call critical attention to the ways that gender and gender performance, including through clothing choices, can be maintained but also potentially contested within machine learning algorithms, and what this means for those who hold more power than us but don't have such critical perspectives on identity. </p>
+
+                    <p class="project_statement_paragraphs"> With our data collection, considering what we had access to is important, as we didn’t want to include images in our dataset that lacked consent. We didn’t want to take images of people who didn’t provide their express permission in order to just grab original images. Joy Buolamwini pays similar attention to access with her own work and in her own machine learning development. According to Buolamwini, access “to the training data is crucial when we want to have a deeper understanding of the risks posed by an AI system. Unless we know where the data comes from, who collected it, and how it is organized, we cannot know if ethical processes were used.” (53) Because we took images of our own clothes, we were able to ensure ethical processes were used in the data collection process. It also allowed us to have a deeper understanding of the image collection process that wouldn't have been allowed if we were just working with an entirely nebulous set of data. </p>
+
+                    <p class="project_statement_paragraphs"> Our work also demonstrated the sorts of microdecisions that are involved in the data collection process. For example, we had to determine what sort of clothing to include, the variety of options that we should include, and what we might even personally be classifying as feminine or masculine. Buolamwini also highlights how “intimately humans are in the process of developing automated systems” (90). As two humans working on this process together, our own personalities and histories were at play here in our decisions of what to include in our dataset. Our own worldviews impact how we understand performances of masculinity and femininity, and gender in general, and not only how it is performed, but also how it is shaped in relation to clothes. Some of the most visible markers of masculinity or femininity can be shirts, pants/skirts, or shoes, but there were a plethora of other options that we could have chosen to include, such as accessories, makeup (or lack thereof), dresses, coats, etc. As Buolamwini states, with machine learning, “data is destiny, because the data provides the model with the representation of the world as curated by the makers of the system” (117).</p>
+
+                    <p class="project_statement_paragraphs"> Not paying attention to these human-oriented microdecisions can risk robbing us of what allows us to relate to other people, form relationships, and trust one another, and Ruha Benjamin (2019) highlights in her article about white supremacy and artificial intelligence. While Benjamin explores a racialized perspective, and ours is more oriented towards markers of gender performance, this attention to relationality helps highlight some of the stakes of critical orientations towards how we collect and utilize data. This highlights why it is important for us to do this work in pairs or small groups, rather than only working from an individualistic perspective. As our lectures and course resources have demonstrated, doing paired programming can be monumentally helpful for working through problems that might take an individual much longer to overcome, once again highlighting the importance of human relationality. </p>
+
+                    <button class="modal_close" id="close_data_collection"> Close </button>
+
+                    </div>
+                </div>
+              
+                <!-- End of Data Collection container -->
+
+
+
+                <!-- Start of Classification container -->
+
+                <div class="modal_container" id="classification_modal_container">
+                    <div class="modal">
+
+                  <h2 class="modal_title"> Classification </h2>  
+                
+                    <p class="project_statement_paragraphs"> Attention to categories and their social construction also illuminates the process of classification and the power structures that are embedded within this process. According to Buolamwini, having “the ability to define classification systems is in itself a power. The choices that are made are influenced by cultural, political, and economic factors, and while these classifications don’t have to be based on definite distinctions, they still have an impact on individual lives and societal attitudes. Despite the power shadows inherent in classification systems, often those systems go unchallenged” (96). We reflected on the power that we had in our ability to determine what even counted as femininity and masculinity, and how this might map onto other people utilizing our algorithm. Our understanding of what is feminine or masculine is itself based on assumptions that are rooted in conceptions of gender. </p>
+
+                    <p class="project_statement_paragraphs"> Ruha Benjamin similarly highlighted the power that being able to “define” a category holds, as it sets what is considered to be the “standard expression”, which risks excluding or pushing other categories out. This is present in our own process and data set, as our division between masculinity and femininity risks excluding people who may intentionally dress in ways that aren’t deemed either masculine or feminine, or who dress in a mix of masculinity and femininity. Nonbinary people that might not be comfortable with their clothing being labeled masculine or feminine might not have a similar experience with our algorithm as opposed to someone who intentionally dresses hypermasculine or hyperfeminine. “The classification systems I or other machine learning practitioners select, modify, inherit, or expand to label a dataset are a reflection of subjective goals, observations, and understandings of the world” (Buolamwini, 115). Our classification system was based on our own subjective goals, observations, and understandings of the world. </p>
+
+                    <p class="project_statement_paragraphs"> While we had the power, in this instance, to determine what counted as feminine or masculine, this was also informed by larger histories and contexts related to our own lives and where we come from. The concepts of gender and how they are performed are rooted in power relations, including other forms of artificial intelligence and technology that continue to promote hegemonic ideals and understandings of femininity and masculinity. This demonstrates how and why it is important to interrogate the labels that we use when describing people and how they show up in the world. </p>
+
+
+                     <button class="modal_close" id="close_classification"> Close </button>
+                    </div>
+                </div>
+
+                <!-- End of Classification container -->
+
+
+
+                <!-- Start of Algorithmic Bias container  -->
+
+
+                <div class="modal_container" id="algorithmic_bias_modal_container">
+                    <div class="modal">
+
+                    <h2 class="modal_title"> Algorithmic Bias </h2>
+                    <p class="project_statement_paragraphs"> The reproduction of common sense norms that are rooted in discriminatory power systems are also the basis for the perpetuation of what Buolamwini termed both “algorithmic bias” and the “Coded Gaze”. As Buolamwini states, “Algorithmic bias occurs when one group is better served than another by an AI system” (34). This is also upheld by the coded gaze, which utilizes the prejudices of those in power to propagate forms of harm and erasure, such as algorithmic bias (Buolamwini). Gender discrimination is still an ongoing issue that we contend with in our society, with women and LGBTQ+ people facing harm, erasure, and discrimination. It is important to consider how other forms of artificial intelligence that are meant to determine gender or gender performance, or just masculinity and femininity in general, might continue to perpetuate these harms and criminalize women or LGBTQ+ people or further exclude or harm them in other ways. </p>
+                    <p class="project_statement_paragraphs"> Additionally, not paying attention to the act of data collection, classification, or the ideological work undergirding these processes can lead to algorithmic bias, as it ignores the reality of the discrimination that marginalized groups continue to face. This reflection allows us to be more critical about this process and its potential impacts, even if it is just on a larger scale. It is also important for us to consider how balanced the data is between the categories and how unbalanced categorization can lead to skewed results. This brings up questions surrounding who among us had more clothes or more variety of clothes? Who was more or less comfortable taking pictures of certain items? How might other factors, like class, sexuality, race, or nationality also map onto this? How can our algorithm be perpetuating harm or bias by not paying more attention to these particularities when it comes to how people may choose to dress and present themselves? </p>
+                    <p class="project_statement_paragraphs"> Judy Wajcman (2010) calls for a rethinking of feminism to consider “feminisms as multiple and dynamic, and in the process of ongoing transformation” (147). This highlights the need for an attention to intersectionality that we began our class considering, and as our own site further explores. It was important for us to consider how our own perspectives as a Black woman and a Black man, respectively, impact what we understand masculinity and femininity to be, and how that might in turn impart a coded gaze that impacts how others engage with our tool. </p>
+
+
+                     <button class="modal_close" id="close_algorithmic_bias"> Close </button>
+                    </div>
+                </div>
+
+                <!-- End of Algorithmic Bias container -->
 
 
 
 
 
+                <!-- Start of Power and Consequences container -->
+
+                <div class="modal_container" id="power_consequences_modal_container">
+                    <div class="modal">
+
+                    <h2 class="modal_title"> Power and Consequences </h2>
+                    <p class="project_statement_paragraphs"> While our algorithm is being enacted on a much smaller scale for our Code and Power class, it is important to consider how these algorithms, and the data we included, can be the basis for more “powerful systems” (7). Buolamwini points to the way that even deadly consequences can arise from systems that don’t, on their surface level, appear to be so “serious”. In speaking about her Aspire Mirror project not working with darker skin, Buolamwini highlights how “the consequences of not being detected by a computer vision system were not just for chuckles but could in fact be grave” (37), using the example of a car not detecting a pedestrian and thus hitting them as an example. </p>
+                    <p class="project_statement_paragraphs"> The consequences of algorithmic bias can range from “benign to lethal” (49), making this work, including ours, important to critically interrogate. Even with our own system, our algorithm can help reinforce the gender binary, or that there is a “right” or “wrong” way to dress according to one’s gender. This is important to consider in our contemporary political environment, where transphobia and homophobia are at all time highs, and transwomen for example are at heightened risk of violence. What does it mean to train a system to detect the “masculinity” or “femininity” of a clothing article? What if a man is detected wearing something too feminine? How might that reproduce homophobia? How can safeguards be constructed to combat these types of harms? We hope that our teachable machine project opens up the chance for some of these important questions to be evaluated, and for us to begin to explore how appropriate artificial intelligence is for making these distinctions. </p>
+                    <p class="project_statement_paragraphs"> Overall, Ruha Benjamin’s (2019) call to demand slower and more socially conscious innovations feels like an appropriate conclusion for us to make here as well, as our own iterative process with this teachable machine project encourages us to consider our own efforts, the histories and structures of power informing this project, and the potential long term implications and consequences of work like this. </p>
+
+                    <button class="modal_close" id="close_power_consequences"> Close </button>
+                    </div>
+                </div>
+                <!-- End of Power and Consequences container -->
 
 
-
-
-
-
-
-
-
-
-
+        <h2> Try it Yourself! </h2>
+        <p> Add Model here? </p>
+                
         </section>
+
+
+
+    
+        <script type="text/javascript" src="teachablemachine.js" defer></script>
 </body>
 
 </html>
