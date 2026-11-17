@@ -348,9 +348,98 @@ button:hover {
     background-color: black; 
 }
 
+/* Start of AI model page*/
 
 
+.ai-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: #DAD2BC;
+    color: #122932;
+}
 
+.ai-section h2,
+.ai-section h3 {
+    color: #532a06;
+    text-align: center;
+}
 
+.ai-description {
+    margin: 0 auto 25px;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}
 
+.ai-section button {
+    width: auto;
+    min-width: 200px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #532a06;
+    color: white;
+    cursor: pointer;
+}
 
+.ai-section button:hover {
+    background: #063218;
+}
+
+.ai-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ai-controls button {
+    margin: 0;
+}
+
+.ai-controls button:last-child {
+    background: #063218;
+}
+
+.ai-section button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ai-status {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ai-status.is-error {
+    color: #8b1e12;
+    font-weight: bold;
+}
+
+.ai-section video:not([hidden]) {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #122932;
+}
+
+#predictions {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+#predictions p {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: white;
+    color: #122932;
+    font-weight: bold;
+}
