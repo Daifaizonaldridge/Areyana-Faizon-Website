@@ -1,3 +1,12 @@
+/* Start of Project statement*/
+/*
+For the development of this project, in order to ensure consistency i used Microsoft Copilot AI for code standards and for integration testing. My human made work was the troubleshooting and implementation fo the google teachable machine Javascript file. 
+    no statements or summaries was AI generated for this project, as those were made by me as well.
+
+*/
+/* End of project statement --FA--*/
+
+
 function modalInteraction (open, modal, close){
     const openModal = document.getElementById(open); 
     const modalContainer = document.getElementById(modal);
