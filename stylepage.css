@@ -10,7 +10,7 @@ Header background color: #532a06 Dark Brown
 */
 
 
-/* Global Styles -- AP */ 
+/* Global Styles -- AP -- Some global styles that we have set to help provide some consistency for our web design */ 
 
 body {
     background-color: #F5F1ED; 
@@ -49,9 +49,8 @@ header h1 {
 }
 
 
-/* Especially as we added another link, when the screen is adjusted to be smaller, the links will look weird 
-And I didn't want that to be the case, so I asked ChatGPT what it recommends for adjusting our navigation bar so that it can adjust to smaller screens,
-And one of the recommendations was to add a media query and, so I added the media query and made a small adjustment to the nav layout -- AP -- */ 
+/* The media query's are implemented throughout based on information that I came across in Ws3Schools and also based on recommendation from ChatGPT for the best way to adjust the navigation bar on a site so that it adjusts to smaller screens
+When the screen gets to a certain size, the nav links stack on top of each other rather than sit horizontally so that they all fit properly on the page  -- AP -- */ 
 
 nav {
     background-color: #cab8a3;
@@ -111,7 +110,7 @@ I made sure to double check exactly what a media query was from w3schools -- AP 
 /*start of home page*/
 
 
-/* Welcome box updates -- AP */ 
+/* Welcome box updates -- AP - Designs for the welcome box on our page to make the home page more engaging and introduce users to the site  */ 
 
 .welcome {
     background-color: #532a06; 
@@ -173,7 +172,7 @@ I made sure to double check exactly what a media query was from w3schools -- AP 
 }
 
 
-/* Flex for layout -- AP */ 
+/* Flex for layout -- AP -- Setting the layout on the about us page to be a flexbox so that our sections can sit next to each other and have some aesthetic appeal */ 
 
 .about_us_container {
     display: flex;
@@ -230,7 +229,7 @@ I made sure to double check exactly what a media query was from w3schools -- AP 
 
 
 
-/* Tech Hero Page Start -- AP */ 
+/* Tech Hero Page Start -- AP -- Design and layout for the tech heroes and their boxes */ 
 
 .hero_image {
     width: 450px;
@@ -418,6 +417,17 @@ button:hover {
 
 
 
+/* Start of Teachable Machine Page */
+
+.about_our_model_paragraphs{
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
 .modal_container {
     position: fixed;
     inset: 0;
@@ -428,6 +438,7 @@ button:hover {
     box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
+    z-index: 1000;
 }
 
 .modal_container.show{
@@ -443,7 +454,7 @@ button:hover {
     overflow-y: auto;
     padding: 20px;
     border-radius: 10px;
-
+    position: relative; 
 }
 
 @media (max-width: 600px){
@@ -480,6 +491,38 @@ button:hover {
     line-height: 1.5em;
     font-size: 20px;
 }
+
+.modal_close_top{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #532a06;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.modal_close_top:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .modal_close_top{
+    display: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.teachable_machines_headings{
+    text-align: center;
+}
+
 
 /* Start of AI model page*/
 

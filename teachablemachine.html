@@ -27,27 +27,34 @@
 
         <section class="width_set"> 
 
-            <h1> About Our Model </h1>
+            <h1 class="teachable_machines_headings"> About Our Model </h1>
 
-            <h2> Video Demo </h2>
+            <p class="about_our_model_paragraphs"> Welcome to our clothing classification algorithm. Gender presentation plays a large role in how we move through the world and how we are treated. Although gender exists outside of a binary, it is often treated 
+                as if it is a binary concept, with masculine and feminine presentations being often seen as the only two available options. How might an algorithm take the concepts of masculine and feminine performance, particularly in relation to clothes,
+                and determine these distinctions? Experiment and play with our model to find out! </p>
+
+                <p class="about_our_model_paragraphs"> Our model consists of 7 categories: Masculine/Feminine Shirt, Masculine/Feminine Bottoms, Masculine/Feminine Shoes, and Non-Clothes. </p>
+
+                <p class="about_our_model_paragraphs"> For our first round of data collection, we focused on getting a variety of clothing options to ensure we had a range of clothes that we consider masculine or feminine. For our second round, we included a few more images of us wearing the clothes rather than holding them or laying them out in order to improve our model accuracy for users. </p>
+
+                <p class="about_our_model_paragraphs"> Please note that your clothing, rather than your face or other objects, should be the primary focus in your camera as you test the model. Otherwise, it will likely be primarily detected as "non-clothes". To test your shoes, you may have to hold them up to the camera while they aren't being worn. </p>
+
+                <p class="about_our_model_paragraphs"> Click on the buttons below to read through our more in-depth project statement.</p>
 
 
             <!-- Start of Project Statement Section. 
-             
 
             For the development of these interactive modals, I didn't want the text to just be very long on the page and ruin the design and aesthetics of the website,
             so I used a combination of a YouTube tutorial, this one to be specific: https://www.youtube.com/watch?v=XH5OW46yO8I
             And ChatGPT for granular changes to help me make the modals on this page using some javascript.
-            I specifically asked ChatGPT to help me with clicking out of the modal by clicking on the background, which helped me add the "event" listener background to the moadl, and then I otherwise relied on the pre-existing design of the site and the buttons
-            that I already created to help me design the modals so that it aligned with our site design
             
+            I specifically asked ChatGPT to help me with clicking out of the modal that I created using javascript, html, and css by clicking on the background, which helped me add the "event" listener background to the moadl, and then I otherwise relied on the pre-existing design of the site and the buttons
+            that I already created to help me design the modals so that it aligned with our site design. 
+
+            I realized after that I should have saved the prompt so I no longer have access to this, but it helped me trouble shoot that if anywhere outside of the modal was clicked, then it should also stop showing or be closed out of
+             
+            The sections below are the actual modals and the content that is within them that holds the sections of our project statement 
             -- AP -->
-
-            <h1> Project Statement </h1>
-
-            <p> Click the buttons below to learn more about our project and how this relates to lessons from the course </p>
-
-
             
             
             <div class="modal_buttons_container"> 
@@ -66,6 +73,8 @@
                     <div class="modal">
 
                 <h2 class="modal_title"> Data Collection </h2>
+
+                    <button class="modal_close_top" id="close_data_collection_top"> Close </button>
 
                     <p class="project_statement_paragraphs"> To begin, we first met to discuss our plan for this project. A part of this was considering what we both had access to, which also illuminates both our overlapping and our distinctive sociopolitical positions. We decided that clothes are something we both have access to. However, rather than just focusing on clothes specifically, focusing on how our clothing choices may map onto our differing genders would allow us to pay a bit more attention to how an algorithm understands the distinction between our clothing choices, particularly in ways that align with performances of femininity and masculinity. This allows us to consider not only how it might be mapping these distinctions onto our own clothes, but also for others who may use the system. </p>
 
@@ -92,6 +101,8 @@
                     <div class="modal">
 
                   <h2 class="modal_title"> Classification </h2>  
+
+                    <button class="modal_close_top" id="close_classification_top"> Close </button>
                 
                     <p class="project_statement_paragraphs"> Attention to categories and their social construction also illuminates the process of classification and the power structures that are embedded within this process. According to Buolamwini, having “the ability to define classification systems is in itself a power. The choices that are made are influenced by cultural, political, and economic factors, and while these classifications don’t have to be based on definite distinctions, they still have an impact on individual lives and societal attitudes. Despite the power shadows inherent in classification systems, often those systems go unchallenged” (96). We reflected on the power that we had in our ability to determine what even counted as femininity and masculinity, and how this might map onto other people utilizing our algorithm. Our understanding of what is feminine or masculine is itself based on assumptions that are rooted in conceptions of gender. </p>
 
@@ -115,6 +126,8 @@
                     <div class="modal">
 
                     <h2 class="modal_title"> Algorithmic Bias </h2>
+
+                    <button class="modal_close_top" id="close_algorithmic_bias_top"> Close </button>
                     <p class="project_statement_paragraphs"> The reproduction of common sense norms that are rooted in discriminatory power systems are also the basis for the perpetuation of what Buolamwini termed both “algorithmic bias” and the “Coded Gaze”. As Buolamwini states, “Algorithmic bias occurs when one group is better served than another by an AI system” (34). This is also upheld by the coded gaze, which utilizes the prejudices of those in power to propagate forms of harm and erasure, such as algorithmic bias (Buolamwini). Gender discrimination is still an ongoing issue that we contend with in our society, with women and LGBTQ+ people facing harm, erasure, and discrimination. It is important to consider how other forms of artificial intelligence that are meant to determine gender or gender performance, or just masculinity and femininity in general, might continue to perpetuate these harms and criminalize women or LGBTQ+ people or further exclude or harm them in other ways. </p>
                     <p class="project_statement_paragraphs"> Additionally, not paying attention to the act of data collection, classification, or the ideological work undergirding these processes can lead to algorithmic bias, as it ignores the reality of the discrimination that marginalized groups continue to face. This reflection allows us to be more critical about this process and its potential impacts, even if it is just on a larger scale. It is also important for us to consider how balanced the data is between the categories and how unbalanced categorization can lead to skewed results. This brings up questions surrounding who among us had more clothes or more variety of clothes? Who was more or less comfortable taking pictures of certain items? How might other factors, like class, sexuality, race, or nationality also map onto this? How can our algorithm be perpetuating harm or bias by not paying more attention to these particularities when it comes to how people may choose to dress and present themselves? </p>
                     <p class="project_statement_paragraphs"> Judy Wajcman (2010) calls for a rethinking of feminism to consider “feminisms as multiple and dynamic, and in the process of ongoing transformation” (147). This highlights the need for an attention to intersectionality that we began our class considering, and as our own site further explores. It was important for us to consider how our own perspectives as a Black woman and a Black man, respectively, impact what we understand masculinity and femininity to be, and how that might in turn impart a coded gaze that impacts how others engage with our tool. </p>
@@ -136,6 +149,8 @@
                     <div class="modal">
 
                     <h2 class="modal_title"> Power and Consequences </h2>
+
+                    <button class="modal_close_top" id="close_power_consequences_top"> Close </button>
                     <p class="project_statement_paragraphs"> While our algorithm is being enacted on a much smaller scale for our Code and Power class, it is important to consider how these algorithms, and the data we included, can be the basis for more “powerful systems” (7). Buolamwini points to the way that even deadly consequences can arise from systems that don’t, on their surface level, appear to be so “serious”. In speaking about her Aspire Mirror project not working with darker skin, Buolamwini highlights how “the consequences of not being detected by a computer vision system were not just for chuckles but could in fact be grave” (37), using the example of a car not detecting a pedestrian and thus hitting them as an example. </p>
                     <p class="project_statement_paragraphs"> The consequences of algorithmic bias can range from “benign to lethal” (49), making this work, including ours, important to critically interrogate. Even with our own system, our algorithm can help reinforce the gender binary, or that there is a “right” or “wrong” way to dress according to one’s gender. This is important to consider in our contemporary political environment, where transphobia and homophobia are at all time highs, and transwomen for example are at heightened risk of violence. What does it mean to train a system to detect the “masculinity” or “femininity” of a clothing article? What if a man is detected wearing something too feminine? How might that reproduce homophobia? How can safeguards be constructed to combat these types of harms? We hope that our teachable machine project opens up the chance for some of these important questions to be evaluated, and for us to begin to explore how appropriate artificial intelligence is for making these distinctions. </p>
                     <p class="project_statement_paragraphs"> Overall, Ruha Benjamin’s (2019) call to demand slower and more socially conscious innovations feels like an appropriate conclusion for us to make here as well, as our own iterative process with this teachable machine project encourages us to consider our own efforts, the histories and structures of power informing this project, and the potential long term implications and consequences of work like this. </p>
@@ -146,11 +161,11 @@
                 <!-- End of Power and Consequences container -->
 
 
-        <h2>Try it Yourself!</h2>
+        <h2 class="teachable_machines_headings"> Video Demo </h2>
         <section class="ai-section" id="ai-model" aria-labelledby="ai-title">
             <h3 id="ai-title">Try the image recognition model</h3>
             <div class="ai-context-space" aria-label="AI model context and description of use">
-                <p>Context: This AI will recgonize the type of clothing you show it and also determine the percentage of clothing shown or not. for example, if you show a shirt and pants, it should say 50% bottoms and 50% shirt.</p>
+                <p>Context: This AI model will recognize the type of clothing you show it and also determine the percentage of clothing shown or not and whether it appears to be masculine or feminine. For example, if you show a shirt and pants, it may say 50% masculine bottoms and 50% masculine shirt.</p>
             </div>
             <p class="ai-description">Start your webcam to load the model and automatically see its predictions. Your camera stream stays in this browser.</p>
             
