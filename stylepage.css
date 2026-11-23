@@ -142,7 +142,7 @@ I made sure to double check exactly what a media query was from w3schools -- AP 
 
 
 
-/* Start of About Us Page */ 
+/* Start of About Us Page -- Designs that are being set on our about us page, with some of the specific designs I set to my own bio that we then implemented for each other -- AP --  */ 
 
 
 /* Areyana Section -- AP */ 
@@ -276,7 +276,7 @@ I made sure to double check exactly what a media query was from w3schools -- AP 
 
 
 
-/* Resources Page Start -- AP */ 
+/* Resources Page Start -- AP -- Designs for the resources page and the boxes that all of the content is within -- Also messed around with the images and the captions here so that they are aligned with the image and also adjust to different screen sizes */ 
 
 .resource_headings {
     background-color: #cab8a3; 
@@ -416,15 +416,41 @@ button:hover {
 }
 
 
+.external_resource_buttons {
+    width: 200px;
+    display: inline-block;
+}
 
-/* Start of Teachable Machine Page */
+#external_resources{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+
+/* Start of Teachable Machine Page -- Teachable machines modal design and implementation with JS so that it shows when the user clicks the button and then with JS goes away when the user clicks "close" or out of the modal. It is also meant to adjust to different screen sizes. */
 
 .about_our_model_paragraphs{
     font-size: 20px;
     line-height: 1.5em;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     margin-bottom: 30px;
+}
+
+.about_our_model_section {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 
