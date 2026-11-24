@@ -565,6 +565,20 @@ button:hover {
     font-weight: bold;
 }
 
+.demo-video-title {
+    text-align: center;
+}
+
+.demo-video {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    max-height: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #122932;
+}
+
 .ai-section video:not([hidden]) {
     display: block;
     max-width: 100%;
